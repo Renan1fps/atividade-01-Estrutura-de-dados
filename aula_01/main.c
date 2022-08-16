@@ -25,6 +25,7 @@ void questionOne()
   printf("\n Valor do carro %2f ", valorVeiculo);
   printf("\n Valor de entrada %2f ", valorVeiculo * 0.20);
   printf("\n Saldo a financiar %2f ", valorVeiculo - valorVeiculo * 0.20);
+  printf("\n Valor final %2f ", valorVeiculo);
 }
 
 
