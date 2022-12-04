@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1668968175 source:c:\users\pv_he\documents\trabalhos code blocks\listas\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"alunos.h"
+
+1668968175 c:\users\pv_he\documents\trabalhos code blocks\listas\alunos.h
+
+1668968195 source:c:\users\pv_he\documents\trabalhos code blocks\listas\aluno.c
+	<stdlib.h>
+	"alunos.h"
+
