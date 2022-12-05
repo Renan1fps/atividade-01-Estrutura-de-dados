@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int retSeqParDec(int n)
+int auxiliar(int n)
 {
   if (n == 0)
   {
@@ -12,16 +12,16 @@ int retSeqParDec(int n)
   {
     printf("%d ", n);
   }
-  retSeqParDec(n - 1);
+  auxiliar(n - 1);
 }
 
-int retSeqParDecSig(int n)
+int numerosParesDecrescente(int n)
 {
   if (n < 0)
   {
-    return -1 * retSeqParDec(n);
+    return -1 * auxiliar(n);
   }
-  return retSeqParDec(n);
+  return auxiliar(n);
 }
 
 int main()
@@ -33,5 +33,5 @@ int main()
   scanf("%d", &n);
 
   printf("\nNumeros pares de 0 até N em ordem decrescente: \n");
-  retSeqParDecSig(n);
+  numerosParesDecrescente(n);
 }

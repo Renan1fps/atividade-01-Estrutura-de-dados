@@ -1,23 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int retSeqPar(int n)
+int auxiliar(int n)
 {
   if (n < 0)
   {
     return 0;
   }
-  2 + retSeqPar(n - 2);
+  2 + auxiliar(n - 2);
   printf("%d ", n);
 }
 
-int retSeqParSig(int n)
+int numerosParesCrescente(int n)
 {
   if (n < 0)
   {
-    return -1 * retSeqPar(n);
+    return -1 * auxiliar(n);
   }
-  return retSeqPar(n);
+  return auxiliar(n);
 }
 
 int main()
@@ -29,5 +29,6 @@ int main()
   scanf("%d", &n);
 
   printf("\nNumeros pares de 0 até N em ordem crescente: \n");
-  retSeqParSig(n);
+  numerosParesCrescente(n);
+  printf("\n");
 }

@@ -1,18 +1,18 @@
 #include <stdio.h>
 
-int retNaturaisDec(int n) {
+int auxiliar(int n) {
 	if(n == -1) {
 		return 0;
 	}
 	printf("%d ", n);
-	retNaturaisDec(n - 1);
+	auxiliar(n - 1);
 }
 
-int retNaturaisDecSig(int n) {
+int numerosNaturaisDec(int n) {
 	if(n < 0) {
-		return retNaturaisDec(n * -1);
+		return auxiliar(n * -1);
 	}
-	return retNaturaisDec(n);
+	return auxiliar(n);
 }
 
 
@@ -25,5 +25,5 @@ int main()
   scanf("%d", &n);
 
   printf("\nNumeros naturais de 0 ate N em ordem decrescente: \n");
-  retNaturaisDecSig(n);
+  numerosNaturaisDec(n);
 }
